@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户查询</title>
+	<script type="text/javascript" src="plugins/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo2.png">
+		<h2>用户管理系统</h2>
+		<a href="">退出</a>
+		<a href="">帮助</a>
+	</header>
+	<div id="center">
+		<div id="left">
+			<div id="left-top">
+				<p>
+					<a href="userList.html">用户查询</a>
+					<hr>
+				</p>
+				<p>
+					<a href="userForm.html">用户新增</a>
+					<hr>
+				</p>
+				
+			</div>
+			<div id="left-bottom">
+				<img src="images/logo1.png">
+				<p>当前登录用户</p>
+			</div>	
+		</div>
+
+		<div id="content">
+			<div id="right">
+				<div id="right_head">
+					用户名称：<input type="text" name="username">
+					<button onclick="select()">查询</button>
+				</div>
+
+				<div id="right_foot">
+					<table border="1" cellspacing="0">
+						<tr bgcolor="#EFF0EF">
+							<td><input type="checkbox" name="checkbox" onclick="checkAll()">用户名称</td>
+							<td>职业</td>
+							<td>邮箱</td>
+							<td>性别</td>
+							<td>特长</td>
+							<td>操作</td>
+						</tr>
+						<tr class="tr1">
+							<td><input type="checkbox" name="checkbox" class="c">轻实训</td>
+							<td>学生</td>
+							<td>1111@shixun.online</td>
+							<td>男</td>
+							<td>书法、乐器</td>
+							<td><a href="#">编辑</a>&nbsp;<span onclick="delet()">删除</span></td>
+						</tr>
+						<tr class="tr1">
+							<td><input type="checkbox" name="checkbox" class="c">王宇宙</td>
+							<td>程序猿</td>
+							<td>2222@qingshixun.com</td>
+							<td>男</td>
+							<td>运动</td>
+							<td><a href="#">编辑</a>&nbsp;<span onclick="delet()">删除</span></td>
+						</tr>
+						<tr class="tr1">
+							<td><input type="checkbox" name="checkbox" class="c">张丽丽</td>
+							<td>UI设计</td>
+							<td>3333@google.com</td>
+							<td>女</td>
+							<td>音乐</td>
+							<td><a href="#">编辑</a>&nbsp;<span onclick="delet()">删除</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<footer>Copyright2017轻实训版权所有</footer>
+		</div>
+	</div>
+	
+</body>
+</html>
